@@ -1,0 +1,8 @@
+services:
+  app:
+    command: sleep infinity
+    volumes:
+      - .:/workspaces/distributed_task_queue:cached
+      - home_dir:/home/vscode
+volumes:
+  home_dir: null
