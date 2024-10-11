@@ -9,6 +9,10 @@
 		"docker-compose.yml"
 	],
 	"service": "app",
+	"runServices": [
+		"zookeeper",
+		"kafka"
+	],
 	"workspaceFolder": "/workspaces/distributed_task_queue",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {

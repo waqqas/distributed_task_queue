@@ -3,3 +3,14 @@ services:
     build:
       dockerfile: Dockerfile
       context: .
+    env_file: .env
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "${ZOOKEEPER_PORT}:${ZOOKEEPER_PORT}"
+    env_file: .env
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "${KAFKA_PORT}:${KAFKA_PORT}"
+    env_file: .env
