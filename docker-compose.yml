@@ -4,13 +4,14 @@ services:
       dockerfile: Dockerfile
       context: .
     env_file: .env
-  zookeeper:
-    image: wurstmeister/zookeeper
-    ports:
-      - "${ZOOKEEPER_PORT}:${ZOOKEEPER_PORT}"
-    env_file: .env
+    depends_on:
+      - kafka
   kafka:
-    image: wurstmeister/kafka
+    image: apache/kafka:latest
     ports:
       - "${KAFKA_PORT}:${KAFKA_PORT}"
     env_file: .env
+    volumes:
+      - kafka-data:/var/lib/kafka/data    
+volumes:
+  kafka-data:

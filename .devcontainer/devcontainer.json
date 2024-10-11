@@ -10,7 +10,6 @@
 	],
 	"service": "app",
 	"runServices": [
-		"zookeeper",
 		"kafka"
 	],
 	"workspaceFolder": "/workspaces/distributed_task_queue",
