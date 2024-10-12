@@ -1,5 +1,17 @@
 # Overview
 
+Implement a distributed task queue system where tasks are published to a Kafka topic by different producers, and worker services consume tasks, execute them, and report back results using gRPC.
+
+
+# Components
+
+- A task producer service that publishes tasks (e.g., data analysis tasks) to Kafka.
+- Multiple worker services (Java) that subscribe to Kafka, process tasks, and use gRPC to report results to a central service.
+- Protobuf to define the task structure and result payloads.
+- Docker to containerize all components, making it easy to scale workers.
+- Bazel for build and test automation.
+
+
 The distributed task queue system will have:
 1. A Task Producer that generates tasks and publishes them to a Kafka topic.
 2. Worker services that consume tasks, process them, and report results back to the Result Aggregator using gRPC.
