@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package taskproducer;
+
+service TaskProducer {
+  rpc SubmitTask (TaskRequest) returns (TaskResponse);
+}
+
+message TaskRequest {
+  string taskType = 1;
+  string payload = 2;  // Additional data required to process the task
+}
+
+message TaskResponse {
+  string taskId = 1;    // Unique ID of the task
+  string status = 2;    // Status of the task submission (e.g., "submitted")
+}

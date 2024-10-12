@@ -31,7 +31,9 @@
 			"extensions": [
 				"sourcegraph.cody-ai",
 				"ms-python.python",
-				"GitHub.vscode-github-actions"
+				"GitHub.vscode-github-actions",
+				"peterj.proto",
+				"BazelBuild.vscode-bazel"
 			]
 		}
 	},
