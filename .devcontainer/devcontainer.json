@@ -29,7 +29,9 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"sourcegraph.cody-ai"
+				"sourcegraph.cody-ai",
+				"ms-python.python",
+				"GitHub.vscode-github-actions"
 			]
 		}
 	},
