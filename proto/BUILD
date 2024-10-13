@@ -9,10 +9,15 @@ proto_library(
 java_proto_library(
     name = "java_task_producer_proto",
     protos = [":task_producer_proto"],
+    visibility = ["//visibility:public"],
+    deps = [
+    ],
 )
 
 java_grpc_library(
     name = "java_task_producer_grpc",
     protos = [":task_producer_proto"],
     visibility = ["//visibility:public"],
+    deps = [
+    ],
 )
