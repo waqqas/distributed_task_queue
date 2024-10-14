@@ -35,7 +35,7 @@ http_archive(
 
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
 
-gazelle_dependencies(go_repository_default_config = "@//:WORKSPACE")
+gazelle_dependencies(go_repository_default_config = "//:WORKSPACE")
 
 http_archive(
     name = "com_google_protobuf",
@@ -87,6 +87,7 @@ maven_install(
         "io.grpc:grpc-protobuf:1.68.0",
         "io.grpc:grpc-netty:1.68.0",
         "com.google.protobuf:protobuf-java:4.28.2",
+        "org.apache.kafka:kafka-clients:3.8.0",
     ],
     maven_install_json = "//:maven_install.json",
     repositories = [

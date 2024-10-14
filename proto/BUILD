@@ -6,18 +6,15 @@ proto_library(
     srcs = ["task_producer.proto"],
 )
 
+
 java_proto_library(
     name = "java_task_producer_proto",
     protos = [":task_producer_proto"],
-    visibility = ["//visibility:public"],
-    deps = [
-    ],
+    visibility = ["//services/task_producer/src/main/java/com/waqqasjabbar/dtq/taskproducer:__subpackages__"],
 )
 
 java_grpc_library(
     name = "java_task_producer_grpc",
     protos = [":task_producer_proto"],
-    visibility = ["//visibility:public"],
-    deps = [
-    ],
+    visibility = ["//services/task_producer/src/main/java/com/waqqasjabbar/dtq/taskproducer:__subpackages__"],
 )

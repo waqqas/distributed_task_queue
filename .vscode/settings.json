@@ -1,0 +1,15 @@
+{
+    "java.import.maven.enabled": false,
+    "java.import.gradle.enabled": false,
+    "bazel.buildifierFixOnFormat": true,
+    "bazel.enableCodeLens": true,
+    "editor.defaultFormatter": "BazelBuild.vscode-bazel",
+    "cody.autocomplete.formatOnAccept": true,
+    "java.project.referencedLibraries": [
+        "bazel-bin/**/*.jar",
+    ],
+    "bazel.buildifierExecutable": "buildifier.bash",
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+}

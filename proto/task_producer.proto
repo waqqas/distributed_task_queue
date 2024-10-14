@@ -15,3 +15,10 @@ message TaskResponse {
   string taskId = 1;    // Unique ID of the task
   string status = 2;    // Status of the task submission (e.g., "submitted")
 }
+
+message Task {
+  string taskId = 1;
+  string taskType = 2;
+  string payload = 3;
+  int64 timestamp = 4;  // Time when the task was created
+}
