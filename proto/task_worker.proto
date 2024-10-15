@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "proto/common.proto";
+
+package com.waqqasjabbar.dtq.task_worker;
+
+service TaskWorker {
+  rpc submitTask (com.waqqasjabbar.dtq.common.TaskRequest) returns (com.waqqasjabbar.dtq.common.TaskResponse);
+}

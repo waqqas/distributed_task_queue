@@ -35,7 +35,7 @@
 				"peterj.proto",
 				"BazelBuild.vscode-bazel",
 				"vscjava.vscode-java-pack",
-				"seanmcshane.jar-viewer-and-decompiler"
+				"zxh404.vscode-proto3"
 			]
 		}
 	},

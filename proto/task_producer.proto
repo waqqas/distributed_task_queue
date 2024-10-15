@@ -1,24 +1,9 @@
 syntax = "proto3";
 
-package taskproducer;
+import "proto/common.proto";
+
+package com.waqqasjabbar.dtq.task_producer;
 
 service TaskProducer {
-  rpc SubmitTask (TaskRequest) returns (TaskResponse);
-}
-
-message TaskRequest {
-  string taskType = 1;
-  string payload = 2;  // Additional data required to process the task
-}
-
-message TaskResponse {
-  string taskId = 1;    // Unique ID of the task
-  string status = 2;    // Status of the task submission (e.g., "submitted")
-}
-
-message Task {
-  string taskId = 1;
-  string taskType = 2;
-  string payload = 3;
-  int64 timestamp = 4;  // Time when the task was created
+  rpc submitTask (com.waqqasjabbar.dtq.common.TaskRequest) returns (com.waqqasjabbar.dtq.common.TaskResponse);
 }

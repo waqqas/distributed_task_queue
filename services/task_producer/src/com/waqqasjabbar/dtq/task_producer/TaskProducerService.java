@@ -1,10 +1,6 @@
-package com.waqqasjabbar.dtq.taskproducer;
+package com.waqqasjabbar.dtq.task_producer;
 
-
-import taskproducer.TaskProducerGrpc;
-import taskproducer.TaskProducerOuterClass.Task;
-import taskproducer.TaskProducerOuterClass.TaskRequest;
-import taskproducer.TaskProducerOuterClass.TaskResponse;
+import com.waqqasjabbar.dtq.common.Common.*;
 
 import io.grpc.stub.StreamObserver;
 import org.apache.kafka.clients.producer.KafkaProducer;
