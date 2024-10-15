@@ -8,6 +8,7 @@ java_binary(
     deps = [
         "//proto:java_task_worker_grpc",
         "//proto:java_task_worker_proto",
+        "//proto:java_common_proto",
         "@maven//:io_grpc_grpc_stub",
         "@maven//:org_apache_kafka_kafka_clients",
     ],
