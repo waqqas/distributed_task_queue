@@ -32,16 +32,18 @@
 				"sourcegraph.cody-ai",
 				"ms-python.python",
 				"GitHub.vscode-github-actions",
-				"peterj.proto",
 				"BazelBuild.vscode-bazel",
-				"vscjava.vscode-java-pack",
-				"zxh404.vscode-proto3"
+				"redhat.java",
+				"vscjava.vscode-java-debug",
+				"vscjava.vscode-java-test",
+				"zxh404.vscode-proto3",
+				"anweber.vscode-httpyac"
 			]
 		}
 	},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
-	"remoteEnv": {
-		"PATH": "${containerEnv:PATH}:/workspaces/${localWorkspaceFolderBasename}/bazel-bin"
-	}
+	// "remoteEnv": {
+	// 	"PATH": "${containerEnv:PATH}:/workspaces/${localWorkspaceFolderBasename}/bazel-bin"
+	// }
 }

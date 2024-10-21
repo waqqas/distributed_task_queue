@@ -11,5 +11,6 @@ java_binary(
         "//proto:java_task_producer_proto",
         "@maven//:io_grpc_grpc_stub",
         "@maven//:org_apache_kafka_kafka_clients",
+        "@maven//:io_github_cdimascio_java_dotenv",
     ],
 )

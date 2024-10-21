@@ -8,8 +8,12 @@
     "java.project.referencedLibraries": [
         "bazel-bin/**/*.jar",
     ],
-    "bazel.buildifierExecutable": "buildifier.bash",
+    "bazel.buildifierExecutable": "",
     "java.format.settings.url": ".vscode/java-formatter.xml",
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.compile.nullAnalysis.mode": "automatic",
+    "editor.defaultFoldingRangeProvider": "BazelBuild.vscode-bazel",
+    "[java]": {
+        "editor.defaultFormatter": "Oracle.oracle-java"
+    },
 }
