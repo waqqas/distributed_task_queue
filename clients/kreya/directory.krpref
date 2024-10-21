@@ -1,0 +1,12 @@
+{
+  "settings": [
+    {
+      "options": {
+        "grpc": {
+          "endpoint": "producer",
+          "disableServerCertificateValidation": true
+        }
+      }
+    }
+  ]
+}

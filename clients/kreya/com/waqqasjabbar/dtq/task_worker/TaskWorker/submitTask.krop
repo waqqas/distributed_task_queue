@@ -1,0 +1,13 @@
+{
+  "details": {
+    "methodFqn": "com.waqqasjabbar.dtq.task_worker.TaskWorker.submitTask"
+  },
+  "requests": [
+    {
+      "location": "submitTask-request.json"
+    }
+  ],
+  "operationType": "unary",
+  "invokerName": "grpc",
+  "importStreamId": "22576b6c-8854-413d-b48f-c2c8d3998a2f"
+}
